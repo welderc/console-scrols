@@ -77,13 +77,13 @@ label {
 /* Letra matrix */
 .matrix:hover {
     color: transparent;
-    background: url(../img/1j6F.gif) no-repeat;
+    background: url(../img/0101010.gif) no-repeat;
     background-clip: text;
     background-size: cover;
 }
 .matrixBrand {
     color: transparent;
-    background: url(../img/1j6F.gif) no-repeat;
+    background: url(../img/0101010.gif) no-repeat;
     background-clip: text;
     background-size: cover;
 }
