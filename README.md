@@ -6,4 +6,8 @@
 <h3>Sem banco de dados:</h3>
 <p>https://github.com/elderScrols/ConsoleScrols/tree/416c01434bc7b59d2e7d0d31d0c6d7577d2be4b8/Sem%20servidor</p>
 <h3>Site sem banco de dados</h3>
+<<<<<<< HEAD
 <p>https://elderscrols.github.io/ConsoleScrols/</p>
+=======
+<p>https://elderscrols.github.io/ConsoleScrols/</p>
+>>>>>>> 4e265cda413940179bd1416f5102a97c6050148a

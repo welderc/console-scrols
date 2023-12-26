@@ -92,6 +92,7 @@ label {
     background-clip: text;
     background-size: cover;
 }
+<<<<<<< HEAD
 
 
 /* Hacker fundo */
@@ -255,3 +256,5 @@ input[type="submit"]:active
 	border: 1px solid #0f0;
 	padding: 8px; 
   }
+=======
+>>>>>>> 4e265cda413940179bd1416f5102a97c6050148a
