@@ -61,6 +61,7 @@ label {
     margin-left: 0.5em;
 }
 
+
 /* Nav items */
 .navbar-items ul, li{
     font-family: Sikscreen, sans-serif;
@@ -73,17 +74,184 @@ label {
 #navbar-items .nav-item {
     margin: 0 1em;
 }
+/* bottão */
+#navbar button.navbar-toggler {
+	float: right;
+  }
 
 /* Letra matrix */
 .matrix:hover {
     color: transparent;
-    background: url(../img/1j6F.gif) no-repeat;
+    background: url(../img/0101010.gif) no-repeat;
     background-clip: text;
     background-size: cover;
 }
 .matrixBrand {
     color: transparent;
-    background: url(../img/1j6F.gif) no-repeat;
+    background: url(../img/0101010.gif) no-repeat;
     background-clip: text;
     background-size: cover;
 }
+
+
+/* Hacker fundo */
+section 
+{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+section::before 
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#000,#0f0,#000);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+section span 
+{
+	position: relative;
+	display: block;
+	width: calc(6.25vw - 2px);
+	height: calc(6.25vw - 2px);
+	background: #181818;
+	z-index: 2;
+	transition: 1.5s;
+}
+section span:hover 
+{
+	background: #0f0;
+	transition: 0s;
+}
+
+@media (max-width: 900px)
+{
+	section span 
+	{
+		width: calc(10vw - 2px);
+		height: calc(10vw - 2px);
+	}
+}
+@media (max-width: 600px)
+{
+	section span 
+	{
+		width: calc(20vw - 2px);
+		height: calc(20vw - 2px);
+	}
+}
+
+
+/* dentro do Haker */
+section .signin
+{
+	position: absolute;
+	width: auto;
+  	background: #222;  
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	border-radius: 4px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+
+section .signin .content
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+}
+section .signin .content h1, h2
+{
+	font-size: 1.5em;
+	color: #0f0;
+}
+section .signin .content p {
+	color: #0f0;
+}
+
+
+/* form */
+form 
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+button{
+	position: relative;
+	width: 100%;
+}
+.cadastrar {
+	padding: 10px;
+	background: #0f0;
+	color: #000;
+	font-weight: 600;
+	font-size: 1.35em;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+	border-radius: 10px;
+
+
+}
+.cadastrar input[type="submit"]
+{
+	padding: 10px;
+	background: #0f0;
+	color: #000;
+	font-weight: 600;
+	font-size: 1.35em;
+	letter-spacing: 0.05em;
+	cursor: pointer;
+}
+input[type="submit"]:active
+{
+	opacity: 0.6;
+}
+
+
+/* tabela */
+.tabela-container {
+	max-height: 300px;
+	overflow-y: auto; 
+  }
+  
+  /* Estilos para a tabela */
+  .tabela-com-overflow {
+	table-layout: fixed; 
+	border-collapse: collapse;
+  }
+  
+  /* Estilos para células e cabeçalhos */
+  .tabela-com-overflow th,
+  .tabela-com-overflow td {
+	color: #FFF;
+	border: 1px solid #0f0;
+	padding: 8px; 
+  }
