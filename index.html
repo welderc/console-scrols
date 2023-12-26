@@ -325,47 +325,6 @@
           <span></span>
           <span></span>
           
-          <div class="signin">
-            <div class="content">
-              <?php
-                //conexão com o banco de dados
-                include('PHP/config.php');
-                //include das páginas
-                switch (@$_REQUEST['page']) {
-                  //marcas
-                  case 'marca-listar':
-                    include('PHP/marca-listar.php');
-                    break;
-                  case 'marca-cadastrar':
-                    include('PHP/marca-cadastrar.php');
-                    break;
-                  case 'marca-editar':
-                    include('PHP/marca-editar.php');
-                    break;
-                  case 'marca-salvar':
-                    include('PHP/marca-salvar.php');
-                    break;
-      
-      
-                  //modelos
-                  case 'modelos-listar':
-                    include('PHP/modelos-listar.php');
-                    break;
-                  case 'modelos-cadastrar':
-                    include('PHP/modelos-cadastrar.php');
-                    break;
-                  case 'modelos-editar':
-                    include('PHP/modelos-editar.php');
-                    break;
-                  case 'modelos-salvar':
-                    include('PHP/modelos-salvar.php');
-                    break;
-                    default:
-                    print "<h1>Seja Bem-vindo</h1>";
-                }
-              ?>
-            </div>
-          </div>
         </section>
       </div>
     </body>
