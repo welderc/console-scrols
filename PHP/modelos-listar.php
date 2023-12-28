@@ -7,8 +7,9 @@
     $qtd = $res->num_rows;
 
     if ($qtd > 0) {
-        print "Encontrou <b>$qtd</b> resultado(s)";
-        print"<table class='table table-cordered table-hover'";
+        print "<p>Encontrou <b>$qtd</b> resultado(s)</p>";
+        print "<div class='tabela-container'>";
+        print"<table class='tabela-com-overflow'";
         print "<tr>";
         print "<th>#</th>";
         print "<th>Marca</th>";
@@ -31,6 +32,7 @@
             print "</tr>";
         }
         print"</table>";
+        print "</div>";
     } else {
         print "Não encontrou resultado";
         }

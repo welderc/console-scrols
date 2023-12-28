@@ -5,8 +5,9 @@
     $qtd = $res->num_rows;
 
     if ($qtd > 0) {
-        print"Encontrou <b>$qtd</b> resultado(s).";
-        print"<table class='table table-bordered table-hover'>";
+        print "<p>Encontrou <b>$qtd</b> resultado(s).</p>";
+        print "<div class='tabela-container'>"; // Envolve a tabela com a div
+        print "<table class='tabela-com-overflow'>";
         print "<tr>";
         print "<td>#</td>";
         print "<td>Nome da Marca</td>";
@@ -20,10 +21,11 @@
                     <button onclick=\"location.href='?page=marca-editar&id_marca=".$row->id_marca."';\" class='btn btn-primary'>Editar</button>
                     
                     <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=marca-salvar&acao=excluir&id_marca=".$row->id_marca."';}else{false;}\" class='btn btn-danger'>Excluir</button>
-                   </td>";
+                </td>";
             print "</tr>";
         }
         print "</table>";
+        print "</div>"; // Fecha a div que envolve a tabela
     } else {
         print "Não encontrou resultado";
     }
