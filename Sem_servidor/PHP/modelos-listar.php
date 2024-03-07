@@ -34,6 +34,6 @@
         print"</table>";
         print "</div>";
     } else {
-        print "Não encontrou resultado";
+        print "<p>Não encontrou resultado</p>";
         }
 ?>

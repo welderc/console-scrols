@@ -27,6 +27,6 @@
         print "</table>";
         print "</div>"; // Fecha a div que envolve a tabela
     } else {
-        print "Não encontrou resultado";
+        print "<p>Não encontrou resultado</p>";
     }
 ?>

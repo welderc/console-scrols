@@ -30,6 +30,7 @@ p  {
 }
 label {
     font-family: Pixelify Sans, sans-serif;
+	color: #FFF;
 }
 
 .bg-primary-color {
@@ -68,7 +69,7 @@ label {
 
 /* Nav items */
 .navbar-items ul, li{
-    font-family: Sikscreen, sans-serif;
+    font-family: Sikscreen, sans-serif
 }
 #navbar-items .navbar-nav {
     display: flex;
